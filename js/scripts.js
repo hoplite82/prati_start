@@ -67,4 +67,4 @@
   
   })(jQuery); // End of use strict
 
- 
+// console.log("scripts.js end");
