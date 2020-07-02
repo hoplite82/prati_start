@@ -17,7 +17,6 @@ It uses plain JS for fetching Todoist. In the current State the Bearer Token is 
 So is also learning by doing and rapid development.
 
 ## Todos
-
 - [] Skills section
 - [] Portfolio section
 - [] Activity section
