@@ -1,6 +1,6 @@
 # Personal Site Robert Pratersch
 
-## Purpuse
+## Purpose
 
 - Source for [www.pratersch.de](http://pratersch.de)  
 - Skills
