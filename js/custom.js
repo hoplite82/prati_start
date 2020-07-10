@@ -15,9 +15,14 @@ var projects = fetch("https://api.todoist.com/rest/v1/projects",requestOptions)
   
   .catch(error => console.log('error', error));
 
+// Promise use more for fun  
 projects.then(res => {
   for(let p of res){
     console.log("P_ID: "+ p.id+" P_name: "+p.name);
+    
+    let pdiv = document.createElement("div");
+    pdiv.setAttribute("id",p.id);
+    
     fetchTasksFromProject(p.id);
     if (p.id == 13973542) {}
   }  
@@ -31,19 +36,17 @@ function fetchTasksFromProject(p_id){
       
         console.log(task.content);
         let li = document.createElement("li");
-        let el = document.createElement("input");
-        let label = document.createElement("label");
+        let i = document.createElement("i");
+        let span = document.createElement("span");
 
         li.setAttribute("class","list-group-item")
-        el.setAttribute("type", "checkbox");
-        el.setAttribute("readonly", "true");
-        label.setAttribute("for", task.content);
-        label.innerText = task.content;
+        i.setAttribute("class", "far fa-circle");
+        span.innerText = " "+task.content;
 
-        div.appendChild(el);
-        div.appendChild(label);
+        li.appendChild(i);
+        li.appendChild(span);
 
-        document.getElementById('shortterm').appendChild(div);
+        document.getElementById(p_id).appendChild(div);
        
      
     }
@@ -52,6 +55,10 @@ function fetchTasksFromProject(p_id){
   .catch(error => console.log('error', error));
 }
 
-
+function svg_slide_draw(level){
+    let svg = document.createElement("svg");
+    
+    svg.appendChild()
+}
 
 console.log("custom.js end")

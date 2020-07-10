@@ -545,25 +545,27 @@ pre code {
   padding-left: 1.5rem;
   margin-right: auto;
   margin-left: auto;
+ border: 3px;
+  border-color: black;
 }
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 560px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 740px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 980px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1160px;
   }
 }
 
@@ -4808,14 +4810,17 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
+  font-family: monospace;
+  padding: 1rem 0.5rem;
+  margin: 0.25rem;
   background-color: #e9ecef;
   border-radius: 0.75rem;
 }
+
+
 @media (min-width: 576px) {
   .jumbotron {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem;
   }
 }
 
@@ -4971,7 +4976,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   overflow: hidden;
   line-height: 0;
   font-size: 0.75rem;
-  background-color: #e9ecef;
+  background-color: #4a9ff3;
   border-radius: 0.5rem;
 }
 
@@ -9999,7 +10004,7 @@ h3 {
   }
 }
 .page-section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
